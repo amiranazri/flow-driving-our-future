@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.3.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<style>
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* navigation 
+ - show navigation always on the large screen devices with (min-width:1024)
+*/
+@media (min-width: 1024px) {
+  .top-navbar {
+    display: inline-flex !important;
+  }
+</style>
+
+<nav class="flex items-center p-3 flex-wrap" style="background-color: #1F514C;">
+  <a href="#" class="p-2 mr-4 inline-flex items-center">  
+    <span class="text-xl text-white font-bold uppercase tracking-wide">
+    <img src="/dof/craft/images/Logo_white.svg"
+    </span>
+  </a>
+  
+  <button class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+    <i class="material-icons">menu</i>
+  </button>
+  
+  <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+    <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+      <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+        <span>Home</span>
+      </a>
+      <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+        <span>About</span>
+      </a>
+      <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+        <span>Competition</span>
+      </a>
+      <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+        <span>Themes</span>
+      </a>
+      <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+        <span>News</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Competition Placeholder -->
+  <div class="grid grid-cols-2 gap-0">
+    <div class=""><img src="/dof/craft/images/dof_header.png"></div>
+    <div class=""><img src="/dof/craft/images/dof_green 08.19.49.png"></div>
+  </div>
+
+<!-- Full-width fluid until the `lg` breakpoint, then lock to container -->
+<div class="md:container md:mx-auto">
+  <img src="/dof/craft/images/Image_VideoPlaceholder.jpg">
+</div>
+
+<!-- Roadmap Placeholder -->
+<div>
+<img src="/dof/craft/images/Image_RoadmapPlaceholder.jpg"
+</div>
+
+<div class="grid grid-flow-col grid-cols-2 grid-rows-2 gap-4">
+  <div>Introducing "Driving Our Future"</div>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</div>
+
+<!-- Competition Placeholder -->
+<div>
+  <div class="grid grid-cols-2 gap-1">
+  <div class="..."><img src="/dof/craft/images/Image_CompetitionPlaceholder.jpg"></div>
+  <div class="..."><img src="/dof/craft/images/dof_green.svg"</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  $(".nav-toggler").each(function(_, navToggler) {
+    var target = $(navToggler).data("target");
+    $(navToggler).on("click", function() {
+      $(target).animate({
+        height: "toggle"
+      });
+    });
+  });
+});
+
+</script>
+
+</html>

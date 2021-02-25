@@ -1,0 +1,17 @@
+dateModified: 1614229089
+email:
+  fromEmail: amiran@flowsa.com
+  fromName: 'Driving Our Future'
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: 'Driving Our Future'
+  schemaVersion: 3.6.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
